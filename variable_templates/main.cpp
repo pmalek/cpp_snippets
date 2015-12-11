@@ -1,5 +1,5 @@
-#include <utility>
 #include <iostream>
+#include <utility>
 
 // variable templates available since gcc 5 (N3651) in c++14
 template <size_t n>
@@ -13,8 +13,10 @@ constexpr size_t fact<0>{1};
 template <typename T>
 constexpr auto factorial(T n)
 {
-  unsigned long long res{1};
-  while (n > 1) res *= n--;
+  uint64_t res{1};
+  while (n > 1) {
+    res *= n--;
+  }
   return res;
 }
 

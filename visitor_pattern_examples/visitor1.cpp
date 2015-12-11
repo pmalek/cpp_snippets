@@ -7,7 +7,7 @@ struct MyStruct
   {
   }
 
-  MyStruct(std::function<void(MyStruct&)> v)
+  explicit MyStruct(std::function<void(MyStruct&)> v)
   {
     v(*this);
   }

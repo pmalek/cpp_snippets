@@ -17,7 +17,7 @@ constexpr auto make_array()
 int main()
 {
   auto a = make_array<100>();
-  for( auto i : a )
+  for( auto& i : a )
   {
     std::cout << i << std::endl;
   }
