@@ -31,3 +31,6 @@
 *.swo
 *.swp
 tags
+
+a.out
+main
